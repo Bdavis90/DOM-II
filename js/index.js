@@ -40,14 +40,14 @@ const button = document.querySelectorAll('.btn');
 
 button[0].addEventListener('click', (e) => {
     button[0].textContent = "DON'T PRESS ME!";
-    e.stopPropagation();
+    // e.stopPropagation();
 });
 
 button[1].addEventListener('mouseover', () => button[1].textContent = 'DON\'T TOUCH ME');
 
 button[2].addEventListener('dblclick', (e) => {
     button[2].textContent = 'LEAVE US ALONE!'
-    // e.stopPropagation()
+    e.stopPropagation()
 })
 
 
